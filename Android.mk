@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter cedric,$(TARGET_DEVICE)),)
+ifneq ($(filter montana,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -293,8 +293,8 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) touch $@
 
 
-include device/motorola/cedric/tftp.mk
-include device/motorola/cedric/expat.mk
+include device/motorola/montana/tftp.mk
+include device/motorola/montana/expat.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
